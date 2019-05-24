@@ -29,6 +29,7 @@
                     <!-- <ComboBoxItem Content="Español" Tag="es-ES"/>
                     <ComboBoxItem Content="Français" Tag="fr-FR"/> -->
                     <ComboBoxItem Content="繁體中文" Tag="zh-TW"/>
+                    <ComboBoxItem Content="日本語" Tag="ja-JP"/>
                 </ComboBox>
             </MenuItem>
         </Menu>

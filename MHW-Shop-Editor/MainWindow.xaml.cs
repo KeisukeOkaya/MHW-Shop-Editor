@@ -162,6 +162,9 @@ namespace MHWShopEditor
                     case "zh-TW":
                         dict.Source = new Uri("Lang.zh-TW.xaml", UriKind.Relative);
                         break;
+                    case "ja-JP":
+                        dict.Source = new Uri("Lang.ja-JP.xaml", UriKind.Relative);
+                        break;
                     //case "fr-FR":
                     //dict.Source = new Uri("Lang.fr-FR.xaml", UriKind.Relative);
                     //break;

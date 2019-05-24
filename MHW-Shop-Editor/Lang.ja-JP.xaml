@@ -1,0 +1,1052 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MHWShopEditor"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <!--application-->
+    <system:String x:Key="title">MHW Shop Editor</system:String>
+    <system:String x:Key="file">ファイル</system:String>
+    <system:String x:Key="open">開く</system:String>
+    <system:String x:Key="save">保存</system:String>
+    <system:String x:Key="lang">言語</system:String>
+    <system:String x:Key="default">デフォルト</system:String>
+    <system:String x:Key="gems">装飾品</system:String>
+    <system:String x:Key="clear">全クリア</system:String>
+    <system:String x:Key="consumables">消耗品</system:String>
+    <system:String x:Key="lr_mats">下位素材</system:String>
+    <system:String x:Key="hr_mats">上位素材</system:String>
+    <system:String x:Key="settings">設定</system:String>
+    <system:String x:Key="insertTop">先頭に挿入</system:String>
+    <system:String x:Key="insertBottom">末尾に挿入</system:String>
+    <system:String x:Key="count">アイテム数:</system:String>
+
+
+    <!--itemlist-->
+    <x:Array Type="local:Item" x:Key="itemsList" >
+        <local:Item Key="item0001" Value="回復薬"/>
+        <local:Item Key="item0002" Value="回復薬グレート"/>
+        <local:Item Key="item0003" Value="秘薬"/>
+        <local:Item Key="item0004" Value="いにしえの秘薬"/>
+        <local:Item Key="item0005" Value="解毒薬"/>
+        <local:Item Key="item0006" Value="漢方薬"/>
+        <local:Item Key="item0007" Value="ウチケシの実"/>
+        <local:Item Key="item0008" Value="元気ドリンコ"/>
+        <local:Item Key="item0009" Value="携帯食料"/>
+        <local:Item Key="item000A" Value="生焼け肉"/>
+        <local:Item Key="item000B" Value="こんがり肉"/>
+        <local:Item Key="item000C" Value="コゲ肉"/>
+        <local:Item Key="item000D" Value="クーラードリンク"/>
+        <local:Item Key="item000E" Value="栄養剤"/>
+        <local:Item Key="item000F" Value="栄養剤グレート"/>
+        <local:Item Key="item0010" Value="活力剤"/>
+        <local:Item Key="item0011" Value="アステラジャーキー"/>
+        <local:Item Key="item0012" Value="強走薬"/>
+        <local:Item Key="item0013" Value="Mega Dash Juice"/>
+        <local:Item Key="item0014" Value="怪力の種"/>
+        <local:Item Key="item0015" Value="鬼人薬"/>
+        <local:Item Key="item0016" Value="鬼人薬グレート"/>
+        <local:Item Key="item0017" Value="怪力の丸薬"/>
+        <local:Item Key="item0018" Value="忍耐の種"/>
+        <local:Item Key="item0019" Value="硬化薬"/>
+        <local:Item Key="item001A" Value="硬化薬グレート"/>
+        <local:Item Key="item001B" Value="忍耐の丸薬"/>
+        <local:Item Key="item001C" Value="生命の粉塵"/>
+        <local:Item Key="item001D" Value="漢方の粉塵"/>
+        <local:Item Key="item001E" Value="鬼人の粉塵"/>
+        <local:Item Key="item001F" Value="硬化の粉塵"/>
+        <local:Item Key="item0020" Value="ハチミツ"/>
+        <local:Item Key="item0021" Value="薬草"/>
+        <local:Item Key="item0022" Value="げどく草"/>
+        <local:Item Key="item0023" Value="火薬草"/>
+        <local:Item Key="item0024" Value="流水草"/>
+        <local:Item Key="item0025" Value="霜ふり草"/>
+        <local:Item Key="item0026" Value="ネムリ草"/>
+        <local:Item Key="item0027" Value="ツタの葉"/>
+        <local:Item Key="item0028" Value="ケムリの実"/>
+        <local:Item Key="item0029" Value="龍殺しの実"/>
+        <local:Item Key="item002A" Value="アオキノコ"/>
+        <local:Item Key="item002B" Value="マンドラゴラ"/>
+        <local:Item Key="item002C" Value="ニトロダケ"/>
+        <local:Item Key="item002D" Value="鬼ニトロダケ"/>
+        <local:Item Key="item002E" Value="マヒダケ"/>
+        <local:Item Key="item002F" Value="毒テングダケ"/>
+        <local:Item Key="item0030" Value="ドキドキノコ"/>
+        <local:Item Key="item0031" Value="にが虫"/>
+        <local:Item Key="item0032" Value="光蟲"/>
+        <local:Item Key="item0033" Value="不死虫"/>
+        <local:Item Key="item0034" Value="雷光虫"/>
+        <local:Item Key="item0035" Value="イレグイコガネ"/>
+        <local:Item Key="item0036" Value="ケルビの角"/>
+        <local:Item Key="item0037" Value="狂走エキス"/>
+        <local:Item Key="item0038" Value="滋養エキス"/>
+        <local:Item Key="item0039" Value="鳴き袋"/>
+        <local:Item Key="item003A" Value="増強剤"/>
+        <local:Item Key="item003B" Value="捕獲用麻酔玉"/>
+        <local:Item Key="item003C" Value="スリンガー閃光弾"/>
+        <local:Item Key="item003D" Value="スリンガー音爆弾"/>
+        <local:Item Key="item003E" Value="けむり玉"/>
+        <local:Item Key="item003F" Value="毒けむり玉"/>
+        <local:Item Key="item0040" Value="モドリ玉"/>
+        <local:Item Key="item0041" Value="生肉"/>
+        <local:Item Key="item0042" Value="毒生肉"/>
+        <local:Item Key="item0043" Value="シビレ生肉"/>
+        <local:Item Key="item0044" Value="眠り生肉"/>
+        <local:Item Key="item0045" Value="爆薬"/>
+        <local:Item Key="item0046" Value="小タル"/>
+        <local:Item Key="item0047" Value="小タル爆弾"/>
+        <local:Item Key="item0048" Value="打上げタル爆弾"/>
+        <local:Item Key="item0049" Value="打上げタル爆弾Ｇ"/>
+        <local:Item Key="item004A" Value="大タル"/>
+        <local:Item Key="item004B" Value="大タル爆弾"/>
+        <local:Item Key="item004C" Value="大タル爆弾Ｇ"/>
+        <local:Item Key="item004D" Value="クモの巣"/>
+        <local:Item Key="item004E" Value="ネット"/>
+        <local:Item Key="item004F" Value="トラップツール"/>
+        <local:Item Key="item0050" Value="落とし穴"/>
+        <local:Item Key="item0051" Value="シビレ罠"/>
+        <local:Item Key="item0052" Value="ころがされたフン"/>
+        <local:Item Key="item0053" Value="モンスターのフン"/>
+        <local:Item Key="item0054" Value="スリンガーこやし弾"/>
+        <local:Item Key="item0055" Value="アロワナダンゴ"/>
+        <local:Item Key="item0056" Value="デメキンダンゴ"/>
+        <local:Item Key="item0057" Value="黄金ダンゴ"/>
+        <local:Item Key="item0058" Value="ブーメラン"/>
+        <local:Item Key="item0059" Value="双眼鏡"/>
+        <local:Item Key="item005A" Value="力の護符"/>
+        <local:Item Key="item005B" Value="力の爪"/>
+        <local:Item Key="item005C" Value="守りの護符"/>
+        <local:Item Key="item005D" Value="守りの爪"/>
+        <local:Item Key="item005E" Value="ハリの実"/>
+        <local:Item Key="item005F" Value="バクレツの実"/>
+        <local:Item Key="item0060" Value="リュウゲキの実"/>
+        <local:Item Key="item0061" Value="ザンレツの実"/>
+        <local:Item Key="item0062" Value="ツラヌキの実"/>
+        <local:Item Key="item0063" Value="カクサンの実"/>
+        <local:Item Key="item0064" Value="チャッカの実"/>
+        <local:Item Key="item0065" Value="ハッカの実"/>
+        <local:Item Key="item0066" Value="LV2 火薬粉"/>
+        <local:Item Key="item0067" Value="LV3 火薬粉"/>
+        <local:Item Key="item0068" Value="キレアジのヒレ"/>
+        <local:Item Key="item0069" Value="キレアジの上ヒレ"/>
+        <local:Item Key="item006A" Value="サシミウロコ"/>
+        <local:Item Key="item006B" Value="大サシミウロコ"/>
+        <local:Item Key="item006C" Value="バクヤクウロコ"/>
+        <local:Item Key="item006D" Value="大バクヤクウロコ"/>
+        <local:Item Key="item006E" Value="ハレツウロコ"/>
+        <local:Item Key="item006F" Value="大ハレツウロコ"/>
+        <local:Item Key="item0070" Value="バクレツウロコ"/>
+        <local:Item Key="item0071" Value="大バクレツウロコ"/>
+        <local:Item Key="item0072" Value="砥石"/>
+        <local:Item Key="item0073" Value="捕獲用ネット"/>
+        <local:Item Key="item0074" Value="釣り竿"/>
+        <local:Item Key="item0075" Value="肉焼きセット"/>
+        <local:Item Key="item0076" Value="隠れ身の装衣"/>
+        <local:Item Key="item0077" Value="転身の装衣"/>
+        <local:Item Key="item0078" Value="癒しの煙筒"/>
+        <local:Item Key="item0079" Value="不動の装衣"/>
+        <local:Item Key="item007A" Value="挑発の装衣"/>
+        <local:Item Key="item007B" Value="体力の装衣"/>
+        <local:Item Key="item007C" Value="耐熱の装衣"/>
+        <local:Item Key="item007D" Value="耐水の装衣"/>
+        <local:Item Key="item007E" Value="耐寒の装衣"/>
+        <local:Item Key="item007F" Value="耐雷の装衣"/>
+        <local:Item Key="item0080" Value="耐龍の装衣"/>
+        <local:Item Key="item0081" Value="解除の煙筒"/>
+        <local:Item Key="item0082" Value="滑空の装衣"/>
+        <local:Item Key="item0083" Value="回避の装衣"/>
+        <local:Item Key="item0084" Value="強打の装衣"/>
+        <local:Item Key="item0085" Value="化合の装衣"/>
+        <local:Item Key="item0086" Value="免疫の装衣"/>
+        <local:Item Key="item0087" Value="達人の煙筒"/>
+        <local:Item Key="item0088" Value="追い剥ぎの装衣"/>
+        <local:Item Key="item0089" Value="LV1 通常弾"/>
+        <local:Item Key="item008A" Value="LV2 通常弾"/>
+        <local:Item Key="item008B" Value="LV3 通常弾"/>
+        <local:Item Key="item008C" Value="LV1 貫通弾"/>
+        <local:Item Key="item008D" Value="LV2 貫通弾"/>
+        <local:Item Key="item008E" Value="LV3 貫通弾"/>
+        <local:Item Key="item008F" Value="LV1 散弾"/>
+        <local:Item Key="item0090" Value="LV2 散弾"/>
+        <local:Item Key="item0091" Value="LV3 散弾"/>
+        <local:Item Key="item0092" Value="LV1 徹甲榴弾"/>
+        <local:Item Key="item0093" Value="LV2 徹甲榴弾"/>
+        <local:Item Key="item0094" Value="LV3 徹甲榴弾"/>
+        <local:Item Key="item0095" Value="LV1 拡散弾"/>
+        <local:Item Key="item0096" Value="LV2 拡散弾"/>
+        <local:Item Key="item0097" Value="LV3 拡散弾"/>
+        <local:Item Key="item0098" Value="火炎弾"/>
+        <local:Item Key="item0099" Value="水冷弾"/>
+        <local:Item Key="item009A" Value="電撃弾"/>
+        <local:Item Key="item009B" Value="氷結弾"/>
+        <local:Item Key="item009C" Value="滅龍弾"/>
+        <local:Item Key="item009D" Value="LV1 毒弾"/>
+        <local:Item Key="item009E" Value="LV2 毒弾"/>
+        <local:Item Key="item009F" Value="LV1 麻痺弾"/>
+        <local:Item Key="item00A0" Value="LV2 麻痺弾"/>
+        <local:Item Key="item00A1" Value="LV1 睡眠弾"/>
+        <local:Item Key="item00A2" Value="LV2 睡眠弾"/>
+        <local:Item Key="item00A3" Value="LV1 減気弾"/>
+        <local:Item Key="item00A4" Value="LV2 減気弾"/>
+        <local:Item Key="item00A5" Value="LV1 回復弾"/>
+        <local:Item Key="item00A6" Value="LV2 回復弾"/>
+        <local:Item Key="item00A7" Value="竜撃弾"/>
+        <local:Item Key="item00A8" Value="斬裂弾"/>
+        <local:Item Key="item00A9" Value="捕獲用麻酔弾"/>
+        <local:Item Key="item00AA" Value="鬼人弾"/>
+        <local:Item Key="item00AB" Value="硬化弾"/>
+        <local:Item Key="item00AC" Value="ビン無し"/>
+        <local:Item Key="item00AD" Value="接撃ビン"/>
+        <local:Item Key="item00AE" Value="空きビン"/>
+        <local:Item Key="item00AF" Value="強撃ビン"/>
+        <local:Item Key="item00B0" Value="毒ビン"/>
+        <local:Item Key="item00B1" Value="麻痺ビン"/>
+        <local:Item Key="item00B2" Value="睡眠ビン"/>
+        <local:Item Key="item00B3" Value="Exhaust Coating"/>
+        <local:Item Key="item00B4" Value="爆破ビン"/>
+        <local:Item Key="item00B5" Value="応急薬"/>
+        <local:Item Key="item00B6" Value="応急薬グレート"/>
+        <local:Item Key="item00B7" Value="支給用携帯食料"/>
+        <local:Item Key="item00B8" Value="支給用生命の粉塵"/>
+        <local:Item Key="item00B9" Value="支給用秘薬"/>
+        <local:Item Key="item00BA" Value="支給用大タル爆弾"/>
+        <local:Item Key="item00BB" Value="支給用シビレ罠"/>
+        <local:Item Key="item00BC" Value="支給用落とし穴"/>
+        <local:Item Key="item00BD" Value="支給用漢方の粉塵"/>
+        <local:Item Key="item00BE" Value="支給用鬼人の粉塵"/>
+        <local:Item Key="item00BF" Value="支給用硬化の粉塵"/>
+        <local:Item Key="item00C0" Value="支給用こやし弾"/>
+        <local:Item Key="item00C1" Value="支給用閃光弾"/>
+        <local:Item Key="item00C2" Value="支給用音爆弾"/>
+        <local:Item Key="item00C3" Value="投げナイフ"/>
+        <local:Item Key="item00C4" Value="毒投げナイフ"/>
+        <local:Item Key="item00C5" Value="眠り投げナイフ"/>
+        <local:Item Key="item00C6" Value="麻痺投げナイフ"/>
+        <local:Item Key="item00C7" Value="捕獲用麻酔投げナイフ"/>
+        <local:Item Key="item00C8" Value="支給用モドリ玉"/>
+        <local:Item Key="item00C9" Value="支給用麻酔玉"/>
+        <local:Item Key="item00CA" Value="バリスタの弾"/>
+        <local:Item Key="item00CB" Value="単発式拘束弾"/>
+        <local:Item Key="item00CC" Value="大砲の弾"/>
+        <local:Item Key="item00CD" Value="鉄鉱石"/>
+        <local:Item Key="item00CE" Value="マカライト鉱石"/>
+        <local:Item Key="item00CF" Value="ドラグライト鉱石"/>
+        <local:Item Key="item00D0" Value="カブレライト鉱石"/>
+        <local:Item Key="item00D1" Value="ユニオン鉱石"/>
+        <local:Item Key="item00D2" Value="大地の結晶"/>
+        <local:Item Key="item00D3" Value="深海の結晶"/>
+        <local:Item Key="item00D4" Value="龍脈の結晶"/>
+        <local:Item Key="item00D5" Value="ライトクリスタル"/>
+        <local:Item Key="item00D6" Value="ノヴァクリスタル"/>
+        <local:Item Key="item00D7" Value="獄炎石"/>
+        <local:Item Key="item00D8" Value="水晶原石"/>
+        <local:Item Key="item00D9" Value="精晶原石"/>
+        <local:Item Key="item00DA" Value="幻晶原石"/>
+        <local:Item Key="item00DB" Value="龍晶原石"/>
+        <local:Item Key="item00DC" Value="鎧玉"/>
+        <local:Item Key="item00DD" Value="上鎧玉"/>
+        <local:Item Key="item00DE" Value="尖鎧玉"/>
+        <local:Item Key="item00DF" Value="堅鎧玉"/>
+        <local:Item Key="item00E0" Value="重鎧玉"/>
+        <local:Item Key="item00E1" Value="頑丈な骨"/>
+        <local:Item Key="item00E2" Value="上質な堅骨"/>
+        <local:Item Key="item00E3" Value="太古の大骨"/>
+        <local:Item Key="item00E4" Value="強固な岩骨"/>
+        <local:Item Key="item00E5" Value="サンゴの紅骨"/>
+        <local:Item Key="item00E6" Value="いびつな狂骨"/>
+        <local:Item Key="item00E7" Value="荒々しい蛮骨"/>
+        <local:Item Key="item00E8" Value="いにしえの龍骨"/>
+        <local:Item Key="item00E9" Value="なぞの頭骨"/>
+        <local:Item Key="item00EA" Value="オオツノアゲハ"/>
+        <local:Item Key="item00EB" Value="禍々しい布"/>
+        <local:Item Key="item00EC" Value="竜骨【小】"/>
+        <local:Item Key="item00ED" Value="竜骨【中】"/>
+        <local:Item Key="item00EE" Value="竜骨【大】"/>
+        <local:Item Key="item00EF" Value="上竜骨"/>
+        <local:Item Key="item00F0" Value="尖竜骨"/>
+        <local:Item Key="item00F1" Value="堅竜骨"/>
+        <local:Item Key="item00F2" Value="古龍骨"/>
+        <local:Item Key="item00F3" Value="とがった爪"/>
+        <local:Item Key="item00F4" Value="鋭利な爪"/>
+        <local:Item Key="item00F5" Value="モンスターの体液"/>
+        <local:Item Key="item00F6" Value="モンスターの濃汁"/>
+        <local:Item Key="item00F7" Value="毒袋"/>
+        <local:Item Key="item00F8" Value="猛毒袋"/>
+        <local:Item Key="item00F9" Value="麻痺袋"/>
+        <local:Item Key="item00FA" Value="強力麻痺袋"/>
+        <local:Item Key="item00FB" Value="睡眠袋"/>
+        <local:Item Key="item00FC" Value="昏睡袋"/>
+        <local:Item Key="item00FD" Value="火炎袋"/>
+        <local:Item Key="item00FE" Value="爆炎袋"/>
+        <local:Item Key="item00FF" Value="水袋"/>
+        <local:Item Key="item0100" Value="大水袋"/>
+        <local:Item Key="item0101" Value="氷結袋"/>
+        <local:Item Key="item0102" Value="凍結袋"/>
+        <local:Item Key="item0103" Value="電気袋"/>
+        <local:Item Key="item0104" Value="電撃袋"/>
+        <local:Item Key="item0105" Value="鳥竜玉"/>
+        <local:Item Key="item0106" Value="竜玉"/>
+        <local:Item Key="item0107" Value="古龍の血"/>
+        <local:Item Key="item0108" Value="モスの苔皮"/>
+        <local:Item Key="item0109" Value="暖かい毛皮"/>
+        <local:Item Key="item010A" Value="上質な毛皮"/>
+        <local:Item Key="item010B" Value="ランゴスタの甲殻"/>
+        <local:Item Key="item010C" Value="ランゴスタの堅殻"/>
+        <local:Item Key="item010D" Value="ランゴスタの羽"/>
+        <local:Item Key="item010E" Value="ランゴスタの薄羽"/>
+        <local:Item Key="item010F" Value="カンタロスの甲殻"/>
+        <local:Item Key="item0110" Value="カンタロスの羽"/>
+        <local:Item Key="item0111" Value="カンタロスの頭"/>
+        <local:Item Key="item0112" Value="カンタロスの堅殻"/>
+        <local:Item Key="item0113" Value="カンタロスの薄羽"/>
+        <local:Item Key="item0114" Value="咬魚の皮"/>
+        <local:Item Key="item0115" Value="咬魚のヒゲ"/>
+        <local:Item Key="item0116" Value="咬魚の上皮"/>
+        <local:Item Key="item0117" Value="咬魚の大ヒゲ"/>
+        <local:Item Key="item0118" Value="翼竜の皮"/>
+        <local:Item Key="item0119" Value="翼竜の上皮"/>
+        <local:Item Key="item011A" Value="バルノスの上皮"/>
+        <local:Item Key="item011B" Value="バルノスの尖爪"/>
+        <local:Item Key="item011C" Value="ケストドンの甲殻"/>
+        <local:Item Key="item011D" Value="ケストドンの頭殻"/>
+        <local:Item Key="item011E" Value="ケストドンの堅殻"/>
+        <local:Item Key="item011F" Value="ガストドンの堅殻"/>
+        <local:Item Key="item0120" Value="ガストドンの尖角"/>
+        <local:Item Key="item0121" Value="ジャグラスの鱗"/>
+        <local:Item Key="item0122" Value="ジャグラスの皮"/>
+        <local:Item Key="item0123" Value="ジャグラスの上鱗"/>
+        <local:Item Key="item0124" Value="ジャグラスの上皮"/>
+        <local:Item Key="item0125" Value="シャムオスの鱗"/>
+        <local:Item Key="item0126" Value="シャムオスの皮"/>
+        <local:Item Key="item0127" Value="シャムオスの上鱗"/>
+        <local:Item Key="item0128" Value="シャムオスの上皮"/>
+        <local:Item Key="item0129" Value="ギルオスの鱗"/>
+        <local:Item Key="item012A" Value="ギルオスの皮"/>
+        <local:Item Key="item012B" Value="ギルオスの麻痺牙"/>
+        <local:Item Key="item012C" Value="ギルオスの上鱗"/>
+        <local:Item Key="item012D" Value="ギルオスの上皮"/>
+        <local:Item Key="item012E" Value="賊竜の鱗"/>
+        <local:Item Key="item012F" Value="賊竜の皮"/>
+        <local:Item Key="item0130" Value="賊竜のたてがみ"/>
+        <local:Item Key="item0131" Value="賊竜の爪"/>
+        <local:Item Key="item0132" Value="賊竜の上鱗"/>
+        <local:Item Key="item0133" Value="賊竜の上皮"/>
+        <local:Item Key="item0134" Value="賊竜の尖爪"/>
+        <local:Item Key="item0135" Value="掻鳥の鱗"/>
+        <local:Item Key="item0136" Value="掻鳥の皮"/>
+        <local:Item Key="item0137" Value="掻鳥の飾り羽"/>
+        <local:Item Key="item0138" Value="掻鳥のクチバシ"/>
+        <local:Item Key="item0139" Value="掻鳥の上鱗"/>
+        <local:Item Key="item013A" Value="掻鳥の上皮"/>
+        <local:Item Key="item013B" Value="掻鳥の大飾り羽"/>
+        <local:Item Key="item013C" Value="掻鳥の大クチバシ"/>
+        <local:Item Key="item013D" Value="毒妖鳥の鱗"/>
+        <local:Item Key="item013E" Value="毒妖鳥の甲殻"/>
+        <local:Item Key="item013F" Value="毒妖鳥の羽根"/>
+        <local:Item Key="item0140" Value="毒妖鳥の喉袋"/>
+        <local:Item Key="item0141" Value="毒妖鳥の尻尾"/>
+        <local:Item Key="item0142" Value="毒妖鳥の上鱗"/>
+        <local:Item Key="item0143" Value="毒妖鳥の堅殻"/>
+        <local:Item Key="item0144" Value="毒妖鳥の翼"/>
+        <local:Item Key="item0145" Value="毒妖鳥の大喉袋"/>
+        <local:Item Key="item0146" Value="土砂竜の甲殻"/>
+        <local:Item Key="item0147" Value="土砂竜の背甲"/>
+        <local:Item Key="item0148" Value="土砂竜の爪"/>
+        <local:Item Key="item0149" Value="土砂竜の頭殻"/>
+        <local:Item Key="item014A" Value="土砂竜の尻尾"/>
+        <local:Item Key="item014B" Value="肥沃なドロ"/>
+        <local:Item Key="item014C" Value="土砂竜の堅殻"/>
+        <local:Item Key="item014D" Value="土砂竜の堅甲"/>
+        <local:Item Key="item014E" Value="土砂竜の鋭爪"/>
+        <local:Item Key="item014F" Value="泥魚竜の鱗"/>
+        <local:Item Key="item0150" Value="泥魚竜の甲殻"/>
+        <local:Item Key="item0151" Value="泥魚竜の牙"/>
+        <local:Item Key="item0152" Value="泥魚竜のヒレ"/>
+        <local:Item Key="item0153" Value="泥魚竜の上鱗"/>
+        <local:Item Key="item0154" Value="泥魚竜の堅殻"/>
+        <local:Item Key="item0155" Value="泥魚竜の鋭牙"/>
+        <local:Item Key="item0156" Value="泥魚竜の上ヒレ"/>
+        <local:Item Key="item0157" Value="飛雷竜の鱗"/>
+        <local:Item Key="item0158" Value="飛雷竜の毛皮"/>
+        <local:Item Key="item0159" Value="飛雷竜の皮膜"/>
+        <local:Item Key="item015A" Value="飛雷竜の爪"/>
+        <local:Item Key="item015B" Value="飛雷竜の電極針"/>
+        <local:Item Key="item015C" Value="飛雷竜の上鱗"/>
+        <local:Item Key="item015D" Value="飛雷竜の上毛皮"/>
+        <local:Item Key="item015E" Value="飛雷竜の尖爪"/>
+        <local:Item Key="item015F" Value="飛雷竜の雷極針"/>
+        <local:Item Key="item0160" Value="蛮顎竜の鱗"/>
+        <local:Item Key="item0161" Value="蛮顎竜の毛皮"/>
+        <local:Item Key="item0162" Value="蛮顎竜の牙"/>
+        <local:Item Key="item0163" Value="蛮顎竜の鼻骨"/>
+        <local:Item Key="item0164" Value="蛮顎竜の尻尾"/>
+        <local:Item Key="item0165" Value="蛮顎竜の逆鱗"/>
+        <local:Item Key="item0166" Value="蛮顎竜の上鱗"/>
+        <local:Item Key="item0167" Value="蛮顎竜の上毛皮"/>
+        <local:Item Key="item0168" Value="蛮顎竜の鋭牙"/>
+        <local:Item Key="item0169" Value="蛮顎竜の大鼻骨"/>
+        <local:Item Key="item016A" Value="蛮顎竜の宝玉"/>
+        <local:Item Key="item016B" Value="雌火竜の鱗"/>
+        <local:Item Key="item016C" Value="雌火竜の甲殻"/>
+        <local:Item Key="item016D" Value="雌火竜の翼膜"/>
+        <local:Item Key="item016E" Value="雌火竜の棘"/>
+        <local:Item Key="item016F" Value="雌火竜の逆鱗"/>
+        <local:Item Key="item0170" Value="雌火竜の上鱗"/>
+        <local:Item Key="item0171" Value="雌火竜の堅殻"/>
+        <local:Item Key="item0172" Value="雌火竜の上棘"/>
+        <local:Item Key="item0173" Value="雌火竜の紅玉"/>
+        <local:Item Key="item0174" Value="桜火竜の上鱗"/>
+        <local:Item Key="item0175" Value="桜火竜の堅殻"/>
+        <local:Item Key="item0176" Value="眩鳥の鱗"/>
+        <local:Item Key="item0177" Value="眩鳥の皮"/>
+        <local:Item Key="item0178" Value="眩鳥の爪"/>
+        <local:Item Key="item0179" Value="眩鳥の発光膜"/>
+        <local:Item Key="item017A" Value="眩鳥の上鱗"/>
+        <local:Item Key="item017B" Value="眩鳥の上皮"/>
+        <local:Item Key="item017C" Value="眩鳥の尖爪"/>
+        <local:Item Key="item017D" Value="眩鳥の閃光膜"/>
+        <local:Item Key="item017E" Value="浮空竜の毛皮"/>
+        <local:Item Key="item017F" Value="浮空竜の鱗"/>
+        <local:Item Key="item0180" Value="ゴム質の甲殻"/>
+        <local:Item Key="item0181" Value="浮空竜の翼膜"/>
+        <local:Item Key="item0182" Value="浮空竜の上毛皮"/>
+        <local:Item Key="item0183" Value="浮空竜の上鱗"/>
+        <local:Item Key="item0184" Value="ゴム質の堅殻"/>
+        <local:Item Key="item0185" Value="浮空竜の翼"/>
+        <local:Item Key="item0186" Value="痺賊竜の鱗"/>
+        <local:Item Key="item0187" Value="痺賊竜の皮"/>
+        <local:Item Key="item0188" Value="痺賊竜の頭巾殻"/>
+        <local:Item Key="item0189" Value="痺賊竜の牙"/>
+        <local:Item Key="item018A" Value="痺賊竜の尻尾"/>
+        <local:Item Key="item018B" Value="痺賊竜の上鱗"/>
+        <local:Item Key="item018C" Value="痺賊竜の上皮"/>
+        <local:Item Key="item018D" Value="痺賊竜の大頭巾"/>
+        <local:Item Key="item018E" Value="痺賊竜の鋭牙"/>
+        <local:Item Key="item018F" Value="骨鎚竜の鱗"/>
+        <local:Item Key="item0190" Value="骨鎚竜の甲殻"/>
+        <local:Item Key="item0191" Value="骨鎚竜の黒油殻"/>
+        <local:Item Key="item0192" Value="竜骨塊"/>
+        <local:Item Key="item0193" Value="Radobaan Jaw"/>
+        <local:Item Key="item0194" Value="骨鎚竜の骨髄"/>
+        <local:Item Key="item0195" Value="骨鎚竜の上鱗"/>
+        <local:Item Key="item0196" Value="骨鎚竜の堅殻"/>
+        <local:Item Key="item0197" Value="骨鎚竜の延髄"/>
+        <local:Item Key="item0198" Value="風漂竜の鱗"/>
+        <local:Item Key="item0199" Value="風漂竜の皮"/>
+        <local:Item Key="item019A" Value="風漂竜の爪"/>
+        <local:Item Key="item019B" Value="風漂竜の翼膜"/>
+        <local:Item Key="item019C" Value="風漂竜の尾膜"/>
+        <local:Item Key="item019D" Value="風漂竜の逆鱗"/>
+        <local:Item Key="item019E" Value="風漂竜の上鱗"/>
+        <local:Item Key="item019F" Value="風漂竜の上皮"/>
+        <local:Item Key="item01A0" Value="風漂竜の尖爪"/>
+        <local:Item Key="item01A1" Value="風漂竜の翼"/>
+        <local:Item Key="item01A2" Value="風漂竜の宝玉"/>
+        <local:Item Key="item01A3" Value="惨爪竜の鱗"/>
+        <local:Item Key="item01A4" Value="惨爪竜の硬筋"/>
+        <local:Item Key="item01A5" Value="惨爪竜の爪"/>
+        <local:Item Key="item01A6" Value="惨爪竜の牙"/>
+        <local:Item Key="item01A7" Value="惨爪竜の尻尾"/>
+        <local:Item Key="item01A8" Value="惨爪竜の逆鱗"/>
+        <local:Item Key="item01A9" Value="惨爪竜の上鱗"/>
+        <local:Item Key="item01AA" Value="惨爪竜の大硬筋"/>
+        <local:Item Key="item01AB" Value="惨爪竜の尖爪"/>
+        <local:Item Key="item01AC" Value="惨爪竜の鋭牙"/>
+        <local:Item Key="item01AD" Value="惨爪竜の宝玉"/>
+        <local:Item Key="item01AE" Value="火竜の鱗"/>
+        <local:Item Key="item01AF" Value="火竜の甲殻"/>
+        <local:Item Key="item01B0" Value="火竜の翼膜"/>
+        <local:Item Key="item01B1" Value="火竜の尻尾"/>
+        <local:Item Key="item01B2" Value="火竜の翼爪"/>
+        <local:Item Key="item01B3" Value="火竜の骨髄"/>
+        <local:Item Key="item01B4" Value="火竜の逆鱗"/>
+        <local:Item Key="item01B5" Value="火竜の上鱗"/>
+        <local:Item Key="item01B6" Value="火竜の堅殻"/>
+        <local:Item Key="item01B7" Value="火竜の翼"/>
+        <local:Item Key="item01B8" Value="火竜の延髄"/>
+        <local:Item Key="item01B9" Value="火竜の紅玉"/>
+        <local:Item Key="item01BA" Value="蒼火竜の上鱗"/>
+        <local:Item Key="item01BB" Value="蒼火竜の堅殻"/>
+        <local:Item Key="item01BC" Value="蒼火竜の尻尾"/>
+        <local:Item Key="item01BD" Value="蒼火竜の翼"/>
+        <local:Item Key="item01BE" Value="角竜の甲殻"/>
+        <local:Item Key="item01BF" Value="角竜の背甲"/>
+        <local:Item Key="item01C0" Value="角竜の尾甲"/>
+        <local:Item Key="item01C1" Value="角竜の牙"/>
+        <local:Item Key="item01C2" Value="ねじれた角"/>
+        <local:Item Key="item01C3" Value="角竜の骨髄"/>
+        <local:Item Key="item01C4" Value="角竜の堅殻"/>
+        <local:Item Key="item01C5" Value="角竜の堅甲"/>
+        <local:Item Key="item01C6" Value="上質なねじれた角"/>
+        <local:Item Key="item01C7" Value="角竜の延髄"/>
+        <local:Item Key="item01C8" Value="黒角竜の堅殻"/>
+        <local:Item Key="item01C9" Value="黒角竜の堅甲"/>
+        <local:Item Key="item01CA" Value="上質な黒巻き角"/>
+        <local:Item Key="item01CB" Value="幻獣の皮"/>
+        <local:Item Key="item01CC" Value="幻獣の尾"/>
+        <local:Item Key="item01CD" Value="幻獣のたてがみ"/>
+        <local:Item Key="item01CE" Value="幻獣の雷角"/>
+        <local:Item Key="item01CF" Value="幻獣の上皮"/>
+        <local:Item Key="item01D0" Value="幻獣の雷尾"/>
+        <local:Item Key="item01D1" Value="幻獣の蒼角"/>
+        <local:Item Key="item01D2" Value="Zorah Magdaros Inner Scale"/>
+        <local:Item Key="item01D3" Value="熔山龍の熱鱗"/>
+        <local:Item Key="item01D4" Value="熔山龍の岩殻"/>
+        <local:Item Key="item01D5" Value="熔山龍の背甲"/>
+        <local:Item Key="item01D6" Value="熔山龍の胸殻"/>
+        <local:Item Key="item01D7" Value="Zorah Magdaros Brace"/>
+        <local:Item Key="item01D8" Value="熔山龍のマグマ"/>
+        <local:Item Key="item01D9" Value="熔山龍の宝玉"/>
+        <local:Item Key="item01DA" Value="岩賊竜の上鱗"/>
+        <local:Item Key="item01DB" Value="岩賊竜の上皮"/>
+        <local:Item Key="item01DC" Value="岩賊竜の顎"/>
+        <local:Item Key="item01DD" Value="岩賊竜の尖爪"/>
+        <local:Item Key="item01DE" Value="岩賊竜の尻尾"/>
+        <local:Item Key="item01DF" Value="溶岩竜の上鱗"/>
+        <local:Item Key="item01E0" Value="溶岩竜の堅殻"/>
+        <local:Item Key="item01E1" Value="溶岩竜の鋭牙"/>
+        <local:Item Key="item01E2" Value="溶岩竜の上ヒレ"/>
+        <local:Item Key="item01E3" Value="爆鎚竜の上鱗"/>
+        <local:Item Key="item01E4" Value="爆鎚竜の堅殻"/>
+        <local:Item Key="item01E5" Value="爆鎚竜の顎"/>
+        <local:Item Key="item01E6" Value="爆鎚竜の耐熱殻"/>
+        <local:Item Key="item01E7" Value="爆鎚竜の延髄"/>
+        <local:Item Key="item01E8" Value="爆鎚竜の紅玉"/>
+        <local:Item Key="item01E9" Value="溶岩塊"/>
+        <local:Item Key="item01EA" Value="爆鱗竜の上鱗"/>
+        <local:Item Key="item01EB" Value="爆鱗竜の堅殻"/>
+        <local:Item Key="item01EC" Value="爆鱗竜の尻尾"/>
+        <local:Item Key="item01ED" Value="爆鱗竜の爆腺"/>
+        <local:Item Key="item01EE" Value="爆鱗竜の尖爪"/>
+        <local:Item Key="item01EF" Value="爆鱗竜の翼"/>
+        <local:Item Key="item01F0" Value="爆鱗竜の宝玉"/>
+        <local:Item Key="item01F1" Value="不滅の龍鱗"/>
+        <local:Item Key="item01F2" Value="滅尽龍の堅殻"/>
+        <local:Item Key="item01F3" Value="Nergigante Barbs"/>
+        <local:Item Key="item01F4" Value="滅尽龍の尻尾"/>
+        <local:Item Key="item01F5" Value="滅尽龍の大角"/>
+        <local:Item Key="item01F6" Value="滅尽龍の尖爪"/>
+        <local:Item Key="item01F7" Value="滅尽龍の再生殻"/>
+        <local:Item Key="item01F8" Value="滅尽龍の宝玉"/>
+        <local:Item Key="item01F9" Value="死屍の龍鱗"/>
+        <local:Item Key="item01FA" Value="屍套龍の堅殻"/>
+        <local:Item Key="item01FB" Value="屍套龍の被膜"/>
+        <local:Item Key="item01FC" Value="屍套龍の尻尾"/>
+        <local:Item Key="item01FD" Value="屍套龍の鋭牙"/>
+        <local:Item Key="item01FE" Value="屍套龍の尖爪"/>
+        <local:Item Key="item01FF" Value="屍套龍の翼"/>
+        <local:Item Key="item0200" Value="Vaal Hazak Miasmacryst"/>
+        <local:Item Key="item0201" Value="屍套龍の宝玉"/>
+        <local:Item Key="item0202" Value="炎王龍の堅殻"/>
+        <local:Item Key="item0203" Value="炎王龍のたてがみ"/>
+        <local:Item Key="item0204" Value="炎王龍の尻尾"/>
+        <local:Item Key="item0205" Value="炎王龍の尖角"/>
+        <local:Item Key="item0206" Value="獄炎の龍鱗"/>
+        <local:Item Key="item0207" Value="炎龍の尖爪"/>
+        <local:Item Key="item0208" Value="炎龍の翼"/>
+        <local:Item Key="item0209" Value="炎龍の塵粉"/>
+        <local:Item Key="item020A" Value="炎龍の宝玉"/>
+        <local:Item Key="item020B" Value="鋼龍の堅殻"/>
+        <local:Item Key="item020C" Value="鋼の上龍鱗"/>
+        <local:Item Key="item020D" Value="鋼龍の翼"/>
+        <local:Item Key="item020E" Value="鋼龍の尖角"/>
+        <local:Item Key="item020F" Value="鋼龍の尻尾"/>
+        <local:Item Key="item0210" Value="鋼龍の尖爪"/>
+        <local:Item Key="item0211" Value="鋼龍の宝玉"/>
+        <local:Item Key="item0212" Value="冥灯龍の幽鱗"/>
+        <local:Item Key="item0213" Value="冥灯龍の白殻"/>
+        <local:Item Key="item0214" Value="冥灯龍の幽幕"/>
+        <local:Item Key="item0215" Value="冥灯龍の尻尾"/>
+        <local:Item Key="item0216" Value="冥灯龍の幽角"/>
+        <local:Item Key="item0217" Value="冥灯龍の幽爪"/>
+        <local:Item Key="item0218" Value="冥灯龍の幽翼"/>
+        <local:Item Key="item0219" Value="Xeno'jiva Crystal"/>
+        <local:Item Key="item021A" Value="冥灯龍の幽玉"/>
+        <local:Item Key="item021B" Value="？？？の鱗"/>
+        <local:Item Key="item021C" Value="？？？の甲殻"/>
+        <local:Item Key="item021D" Value="？？？の皮膜"/>
+        <local:Item Key="item021E" Value="？？？の尻尾"/>
+        <local:Item Key="item021F" Value="？？？の角"/>
+        <local:Item Key="item0220" Value="？？？の爪"/>
+        <local:Item Key="item0221" Value="？？？の翼"/>
+        <local:Item Key="item0222" Value="??? Crystal"/>
+        <local:Item Key="item0223" Value="？？？の宝玉"/>
+        <local:Item Key="item0224" Value="なぞの珠"/>
+        <local:Item Key="item0225" Value="光る珠"/>
+        <local:Item Key="item0226" Value="古びた珠"/>
+        <local:Item Key="item0227" Value="風化した珠"/>
+        <local:Item Key="item0228" Value="汚れた龍脈石"/>
+        <local:Item Key="item0229" Value="輝く龍脈石"/>
+        <local:Item Key="item022A" Value="龍脈石のかけら"/>
+        <local:Item Key="item022B" Value="龍脈石"/>
+        <local:Item Key="item022C" Value="大龍脈石"/>
+        <local:Item Key="item022D" Value="猛者の龍脈石・剣"/>
+        <local:Item Key="item022E" Value="猛者の龍脈石・刃"/>
+        <local:Item Key="item022F" Value="猛者の龍脈石・鎚"/>
+        <local:Item Key="item0230" Value="猛者の龍脈石・槍"/>
+        <local:Item Key="item0231" Value="猛者の龍脈石・斧"/>
+        <local:Item Key="item0232" Value="猛者の龍脈石・柄"/>
+        <local:Item Key="item0233" Value="猛者の龍脈石・弩"/>
+        <local:Item Key="item0234" Value="英雄の龍脈石・剣"/>
+        <local:Item Key="item0235" Value="英雄の龍脈石・刃"/>
+        <local:Item Key="item0236" Value="英雄の龍脈石・鎚"/>
+        <local:Item Key="item0237" Value="英雄の龍脈石・槍"/>
+        <local:Item Key="item0238" Value="英雄の龍脈石・斧"/>
+        <local:Item Key="item0239" Value="英雄の龍脈石・柄"/>
+        <local:Item Key="item023A" Value="英雄の龍脈石・弩"/>
+        <local:Item Key="item023B" Value="お食事券"/>
+        <local:Item Key="item023C" Value="古代竜人の手形"/>
+        <local:Item Key="item023D" Value="古代竜人の手形Ｇ"/>
+        <local:Item Key="item023E" Value="鋼の竜人手形"/>
+        <local:Item Key="item023F" Value="銀の竜人手形"/>
+        <local:Item Key="item0240" Value="金の竜人手形"/>
+        <local:Item Key="item0241" Value="勇気の証"/>
+        <local:Item Key="item0242" Value="勇気の証Ｇ"/>
+        <local:Item Key="item0243" Value="調査団チケット"/>
+        <local:Item Key="item0244" Value="プケプケコイン"/>
+        <local:Item Key="item0245" Value="クルルコイン"/>
+        <local:Item Key="item0246" Value="レイアコイン"/>
+        <local:Item Key="item0247" Value="ツィツィコイン"/>
+        <local:Item Key="item0248" Value="ボロスコイン"/>
+        <local:Item Key="item0249" Value="ガマルコイン"/>
+        <local:Item Key="item024A" Value="レウスコイン"/>
+        <local:Item Key="item024B" Value="獣竜コイン"/>
+        <local:Item Key="item024C" Value="飛竜コイン"/>
+        <local:Item Key="item024D" Value="闘技王のコイン"/>
+        <local:Item Key="item024E" Value="狩猟王のコイン"/>
+        <local:Item Key="item024F" Value="撃龍王のコイン"/>
+        <local:Item Key="item0250" Value="鋼のたまご"/>
+        <local:Item Key="item0251" Value="銀のたまご"/>
+        <local:Item Key="item0252" Value="金のたまご"/>
+        <local:Item Key="item0253" Value="欠けたウロコ"/>
+        <local:Item Key="item0254" Value="大きなウロコ"/>
+        <local:Item Key="item0255" Value="きれいなウロコ"/>
+        <local:Item Key="item0256" Value="つやめくウロコ"/>
+        <local:Item Key="item0257" Value="かがやくウロコ"/>
+        <local:Item Key="item0258" Value="ベルナストーン"/>
+        <local:Item Key="item0259" Value="ドンドルマリン"/>
+        <local:Item Key="item025A" Value="ロックラック鉱"/>
+        <local:Item Key="item025B" Value="バルバレクォーツ"/>
+        <local:Item Key="item025C" Value="ミナガルデナイト"/>
+        <local:Item Key="item025D" Value="黄金のウロコ"/>
+        <local:Item Key="item025E" Value="黄金の大ウロコ"/>
+        <local:Item Key="item025F" Value="白金のウロコ"/>
+        <local:Item Key="item0260" Value="白金の大ウロコ"/>
+        <local:Item Key="item0261" Value="金色のウロコ"/>
+        <local:Item Key="item0262" Value="金色の大ウロコ"/>
+        <local:Item Key="item0263" Value="ホワイトレバー"/>
+        <local:Item Key="item0264" Value="竜のナミダ"/>
+        <local:Item Key="item0265" Value="竜の大粒ナミダ"/>
+        <local:Item Key="item0266" Value="龍秘宝"/>
+        <local:Item Key="item0267" Value="Old Dragon Treasure"/>
+        <local:Item Key="item0268" Value="サニーフラワー"/>
+        <local:Item Key="item0269" Value="シャインフラワー"/>
+        <local:Item Key="item026A" Value="ゴールドフラワー"/>
+        <local:Item Key="item026B" Value="特産スジタケ"/>
+        <local:Item Key="item026C" Value="厳選スジタケ"/>
+        <local:Item Key="item026D" Value="霊光スジタケ"/>
+        <local:Item Key="item026E" Value="小玉サボテン"/>
+        <local:Item Key="item026F" Value="大玉サボテン"/>
+        <local:Item Key="item0270" Value="王様サボテン"/>
+        <local:Item Key="item0271" Value="ハードフルーツ"/>
+        <local:Item Key="item0272" Value="ロックフルーツ"/>
+        <local:Item Key="item0273" Value="ワイルドフルーツ"/>
+        <local:Item Key="item0274" Value="特産ツボアワビ"/>
+        <local:Item Key="item0275" Value="厳選ツボアワビ"/>
+        <local:Item Key="item0276" Value="秘蔵ツボアワビ"/>
+        <local:Item Key="item0277" Value="ライトパール"/>
+        <local:Item Key="item0278" Value="ディープパール"/>
+        <local:Item Key="item0279" Value="イノセントパール"/>
+        <local:Item Key="item027A" Value="いにしえの化石"/>
+        <local:Item Key="item027B" Value="まぼろしの化石"/>
+        <local:Item Key="item027C" Value="神秘の化石"/>
+        <local:Item Key="item027D" Value="地下の果実"/>
+        <local:Item Key="item027E" Value="瘴気の果実"/>
+        <local:Item Key="item027F" Value="彼岸の果実"/>
+        <local:Item Key="item0280" Value="大地のコハク"/>
+        <local:Item Key="item0281" Value="龍脈のコハク"/>
+        <local:Item Key="item0282" Value="太古のコハク"/>
+        <local:Item Key="item0283" Value="ブルーマリン"/>
+        <local:Item Key="item0284" Value="トゥルーマリン"/>
+        <local:Item Key="item0285" Value="アビスマリン"/>
+        <local:Item Key="item0286" Value="百陽草"/>
+        <local:Item Key="item0287" Value="月夜茸"/>
+        <local:Item Key="item0288" Value="ドラゴンフラワー"/>
+        <local:Item Key="item0289" Value="トロピカパイン"/>
+        <local:Item Key="item028A" Value="藤色ツボアワビ"/>
+        <local:Item Key="item028B" Value="プラチナパール"/>
+        <local:Item Key="item028C" Value="魔の化石"/>
+        <local:Item Key="item028D" Value="ヘブンベリー"/>
+        <local:Item Key="item028E" Value="黄昏の石"/>
+        <local:Item Key="item028F" Value="ノアストーン"/>
+        <local:Item Key="item0290" Value="飛竜の卵"/>
+        <local:Item Key="item0291" Value="草食竜の卵"/>
+        <local:Item Key="item0292" Value="肉の塊"/>
+        <local:Item Key="item0293" Value="ヨリミチウサギ"/>
+        <local:Item Key="item0294" Value="ミチビキウサギ"/>
+        <local:Item Key="item0295" Value="シンリンシソチョウ"/>
+        <local:Item Key="item0296" Value="コダイジュノツカイ"/>
+        <local:Item Key="item0297" Value="コバルトモルフォ"/>
+        <local:Item Key="item0298" Value="マボロシモルフォ"/>
+        <local:Item Key="item0299" Value="ナキキノボリウオ"/>
+        <local:Item Key="item029A" Value="モリゲッコー"/>
+        <local:Item Key="item029B" Value="アリヅカゲッコー"/>
+        <local:Item Key="item029C" Value="クラヤミゲッコー"/>
+        <local:Item Key="item029D" Value="月光ゲッコー"/>
+        <local:Item Key="item029E" Value="カスミジョロウ"/>
+        <local:Item Key="item029F" Value="スカベンチュラ"/>
+        <local:Item Key="item02A0" Value="ニクイドリ"/>
+        <local:Item Key="item02A1" Value="トウゲンチョウ"/>
+        <local:Item Key="item02A2" Value="キザシヤンマ"/>
+        <local:Item Key="item02A3" Value="キッチョウヤンマ"/>
+        <local:Item Key="item02A4" Value="ウロコウモリ"/>
+        <local:Item Key="item02A5" Value="フンコロガシ"/>
+        <local:Item Key="item02A6" Value="バクダンイワコロガシ"/>
+        <local:Item Key="item02A7" Value="ピンクパレクス"/>
+        <local:Item Key="item02A8" Value="ドスピンクパレクス"/>
+        <local:Item Key="item02A9" Value="ハレツアロワナ"/>
+        <local:Item Key="item02AA" Value="バクレツアロワナ"/>
+        <local:Item Key="item02AB" Value="ドスハレツアロワナ"/>
+        <local:Item Key="item02AC" Value="ドスバクレツアロワナ"/>
+        <local:Item Key="item02AD" Value="ドレスサンゴドリ"/>
+        <local:Item Key="item02AE" Value="タキシードサンゴドリ"/>
+        <local:Item Key="item02AF" Value="アンドンウオ"/>
+        <local:Item Key="item02B0" Value="フワフワクイナ"/>
+        <local:Item Key="item02B1" Value="ゴワゴワクイナ"/>
+        <local:Item Key="item02B2" Value="ホッピングッピー"/>
+        <local:Item Key="item02B3" Value="カセキカンス"/>
+        <local:Item Key="item02B4" Value="シビレガスガエル"/>
+        <local:Item Key="item02B5" Value="ネムリガスガエル"/>
+        <local:Item Key="item02B6" Value="ニトロガスガエル"/>
+        <local:Item Key="item02B7" Value="ユラユラ"/>
+        <local:Item Key="item02B8" Value="ユラユラクイーン"/>
+        <local:Item Key="item02B9" Value="回復ミツムシ"/>
+        <local:Item Key="item02BA" Value="大回復ミツムシ"/>
+        <local:Item Key="item02BB" Value="オソラノエボシ"/>
+        <local:Item Key="item02BC" Value="ハコビアリ"/>
+        <local:Item Key="item02BD" Value="ドスヘラクレス"/>
+        <local:Item Key="item02BE" Value="ゴールデンヘラクレス"/>
+        <local:Item Key="item02BF" Value="虹色ドスヘラクレス"/>
+        <local:Item Key="item02C0" Value="皇帝バッタ"/>
+        <local:Item Key="item02C1" Value="暴君バッタ"/>
+        <local:Item Key="item02C2" Value="閃光羽虫"/>
+        <local:Item Key="item02C3" Value="ムカシマンタゲラ"/>
+        <local:Item Key="item02C4" Value="テツカブトガニ"/>
+        <local:Item Key="item02C5" Value="ヘイタイカブトガニ"/>
+        <local:Item Key="item02C6" Value="エメラルドカブトガニ"/>
+        <local:Item Key="item02C7" Value="キレアジ"/>
+        <local:Item Key="item02C8" Value="ドスキレアジ"/>
+        <local:Item Key="item02C9" Value="大食いマグロ"/>
+        <local:Item Key="item02CA" Value="ドス大食いマグロ"/>
+        <local:Item Key="item02CB" Value="ダイオウカジキ"/>
+        <local:Item Key="item02CC" Value="ドスダイオウカジキ"/>
+        <local:Item Key="item02CD" Value="黄金魚"/>
+        <local:Item Key="item02CE" Value="白金魚"/>
+        <local:Item Key="item02CF" Value="ドス黄金魚"/>
+        <local:Item Key="item02D0" Value="ドス白金魚"/>
+        <local:Item Key="item02D1" Value="小金魚"/>
+        <local:Item Key="item02D2" Value="ドス小金魚"/>
+        <local:Item Key="item02D3" Value="サシミウオ"/>
+        <local:Item Key="item02D4" Value="ドスサシミウオ"/>
+        <local:Item Key="item02D5" Value="バクヤクデメキン"/>
+        <local:Item Key="item02D6" Value="ドスバクヤクデメキン"/>
+        <local:Item Key="item02D7" Value="耐毒珠【１】"/>
+        <local:Item Key="item02D8" Value="耐麻珠【１】"/>
+        <local:Item Key="item02D9" Value="耐眠珠【１】"/>
+        <local:Item Key="item02DA" Value="耐絶珠【１】"/>
+        <local:Item Key="item02DB" Value="耐爆珠【１】"/>
+        <local:Item Key="item02DC" Value="耐裂珠【１】"/>
+        <local:Item Key="item02DD" Value="耐防珠【１】"/>
+        <local:Item Key="item02DE" Value="防音珠【３】"/>
+        <local:Item Key="item02DF" Value="防風珠【２】"/>
+        <local:Item Key="item02E0" Value="耐震珠【２】"/>
+        <local:Item Key="item02E1" Value="Fertilizer Jewel 1"/>
+        <local:Item Key="item02E2" Value="Heat Resist Jewel 2"/>
+        <local:Item Key="item02E3" Value="攻撃珠【１】"/>
+        <local:Item Key="item02E4" Value="防御珠【１】"/>
+        <local:Item Key="item02E5" Value="体力珠【１】"/>
+        <local:Item Key="item02E6" Value="早復珠【１】"/>
+        <local:Item Key="item02E7" Value="耐火珠【１】"/>
+        <local:Item Key="item02E8" Value="耐水珠【１】"/>
+        <local:Item Key="item02E9" Value="耐氷珠【１】"/>
+        <local:Item Key="item02EA" Value="耐雷珠【１】"/>
+        <local:Item Key="item02EB" Value="耐龍珠【１】"/>
+        <local:Item Key="item02EC" Value="耐属珠【１】"/>
+        <local:Item Key="item02ED" Value="火炎珠【１】"/>
+        <local:Item Key="item02EE" Value="流水珠【１】"/>
+        <local:Item Key="item02EF" Value="氷結珠【１】"/>
+        <local:Item Key="item02F0" Value="雷光珠【１】"/>
+        <local:Item Key="item02F1" Value="破龍珠【１】"/>
+        <local:Item Key="item02F2" Value="毒珠【１】"/>
+        <local:Item Key="item02F3" Value="麻痺珠【１】"/>
+        <local:Item Key="item02F4" Value="睡眠珠【１】"/>
+        <local:Item Key="item02F5" Value="爆破珠【１】"/>
+        <local:Item Key="item02F6" Value="毒瓶珠【３】"/>
+        <local:Item Key="item02F7" Value="痺瓶珠【３】"/>
+        <local:Item Key="item02F8" Value="眠瓶珠【３】"/>
+        <local:Item Key="item02F9" Value="爆瓶珠【３】"/>
+        <local:Item Key="item02FA" Value="Powercoat Jewel 3"/>
+        <local:Item Key="item02FB" Value="解放珠【３】"/>
+        <local:Item Key="item02FC" Value="達人珠【１】"/>
+        <local:Item Key="item02FD" Value="超心珠【２】"/>
+        <local:Item Key="item02FE" Value="痛撃珠【２】"/>
+        <local:Item Key="item02FF" Value="短縮珠【２】"/>
+        <local:Item Key="item0300" Value="匠珠【３】"/>
+        <local:Item Key="item0301" Value="抜刀珠【２】"/>
+        <local:Item Key="item0302" Value="重撃珠【２】"/>
+        <local:Item Key="item0303" Value="ＫＯ珠【２】"/>
+        <local:Item Key="item0304" Value="奪気珠【１】"/>
+        <local:Item Key="item0305" Value="Rodeo Jewel 2"/>
+        <local:Item Key="item0306" Value="飛燕珠【２】"/>
+        <local:Item Key="item0307" Value="全開珠【２】"/>
+        <local:Item Key="item0308" Value="挑戦珠【２】"/>
+        <local:Item Key="item0309" Value="無傷珠【２】"/>
+        <local:Item Key="item030A" Value="底力珠【２】"/>
+        <local:Item Key="item030B" Value="逆境珠【１】"/>
+        <local:Item Key="item030C" Value="逆上珠【２】"/>
+        <local:Item Key="item030D" Value="鼓笛珠【１】"/>
+        <local:Item Key="item030E" Value="増弾珠【２】"/>
+        <local:Item Key="item030F" Value="特射珠【１】"/>
+        <local:Item Key="item0310" Value="砲術珠【１】"/>
+        <local:Item Key="item0311" Value="砲手珠【１】"/>
+        <local:Item Key="item0312" Value="強走珠【２】"/>
+        <local:Item Key="item0313" Value="体術珠【２】"/>
+        <local:Item Key="item0314" Value="Flying Leap Jewel 1"/>
+        <local:Item Key="item0315" Value="早気珠【２】"/>
+        <local:Item Key="item0316" Value="無食珠【１】"/>
+        <local:Item Key="item0317" Value="回避珠【２】"/>
+        <local:Item Key="item0318" Value="跳躍珠【２】"/>
+        <local:Item Key="item0319" Value="鉄壁珠【１】"/>
+        <local:Item Key="item031A" Value="速納珠【１】"/>
+        <local:Item Key="item031B" Value="友愛珠【１】"/>
+        <local:Item Key="item031C" Value="持続珠【１】"/>
+        <local:Item Key="item031D" Value="節食珠【１】"/>
+        <local:Item Key="item031E" Value="早食珠【１】"/>
+        <local:Item Key="item031F" Value="研磨珠【１】"/>
+        <local:Item Key="item0320" Value="爆師珠【１】"/>
+        <local:Item Key="item0321" Value="茸好珠【１】"/>
+        <local:Item Key="item0322" Value="Angler Jewel 1"/>
+        <local:Item Key="item0323" Value="Chef Jewel 1"/>
+        <local:Item Key="item0324" Value="Transporter Jewel 1"/>
+        <local:Item Key="item0325" Value="Gathering Jewel 1"/>
+        <local:Item Key="item0326" Value="Honeybee Jewel 1"/>
+        <local:Item Key="item0327" Value="Carver Jewel 1"/>
+        <local:Item Key="item0328" Value="加護珠【１】"/>
+        <local:Item Key="item0329" Value="采配珠【１】"/>
+        <local:Item Key="item032A" Value="植学珠【１】"/>
+        <local:Item Key="item032B" Value="地学珠【１】"/>
+        <local:Item Key="item032C" Value="渾身珠【２】"/>
+        <local:Item Key="item032D" Value="投石珠【１】"/>
+        <local:Item Key="item032E" Value="潜伏珠【１】"/>
+        <local:Item Key="item032F" Value="耐衝珠【３】"/>
+        <local:Item Key="item0330" Value="Scoutfly Jewel 1"/>
+        <local:Item Key="item0331" Value="Crouching Jewel 1"/>
+        <local:Item Key="item0332" Value="Longjump Jewel 1"/>
+        <local:Item Key="item0333" Value="煙復珠【１】"/>
+        <local:Item Key="item0334" Value="沼渡珠【１】"/>
+        <local:Item Key="item0335" Value="Climber Jewel 1"/>
+        <local:Item Key="item0336" Value="Radiosity Jewel 1"/>
+        <local:Item Key="item0337" Value="Research Jewel 1"/>
+        <local:Item Key="item0338" Value="標本珠【１】"/>
+        <local:Item Key="item0339" Value="耐瘴珠【１】"/>
+        <local:Item Key="item033A" Value="嗅覚珠【１】"/>
+        <local:Item Key="item033B" Value="Slider Jewel 1"/>
+        <local:Item Key="item033C" Value="威嚇珠【１】"/>
+        <local:Item Key="item033D" Value="Hazmat Jewel 1"/>
+        <local:Item Key="item033E" Value="Mudshield Jewel 1"/>
+        <local:Item Key="item033F" Value="Element Resist Jewel 1"/>
+        <local:Item Key="item0340" Value="滑走珠【２】"/>
+        <local:Item Key="item0341" Value="治癒珠【１】"/>
+        <local:Item Key="item0342" Value="強弾珠【３】"/>
+        <local:Item Key="item0343" Value="貫通珠【３】"/>
+        <local:Item Key="item0344" Value="散弾珠【３】"/>
+        <local:Item Key="item0345" Value="昂揚珠【２】"/>
+        <local:Item Key="item0346" Value="窮地珠【１】"/>
+        <local:Item Key="item0347" Value="龍封珠【３】"/>
+        <local:Item Key="item0348" Value="Discovery Jewel 2"/>
+        <local:Item Key="item0349" Value="Detector Jewel 1"/>
+        <local:Item Key="item034A" Value="整備珠【１】"/>
+        <local:Item Key="item034B" Value="ミツムシお届けの指笛"/>
+        <local:Item Key="item034C" Value="ミツムシ設置の指笛"/>
+        <local:Item Key="item034D" Value="閃光虫かごの指笛"/>
+        <local:Item Key="item034E" Value="痺れ虫かごの指笛"/>
+        <local:Item Key="item034F" Value="大盾挑発の指笛"/>
+        <local:Item Key="item0350" Value="大盾バッシュの指笛"/>
+        <local:Item Key="item0351" Value="はげましホルンの指笛"/>
+        <local:Item Key="item0352" Value="はげましボンゴの指笛"/>
+        <local:Item Key="item0353" Value="ぶんどり突撃の指笛"/>
+        <local:Item Key="item0354" Value="落っことし投擲の指笛"/>
+        <local:Item Key="item0355" Value="壺爆弾投擲の指笛"/>
+        <local:Item Key="item0356" Value="火炎車の指笛"/>
+        <local:Item Key="item0357" Value="Item 855"/>
+        <local:Item Key="item0358" Value="Item 856"/>
+        <local:Item Key="item0359" Value="Item 857"/>
+        <local:Item Key="item035A" Value="Item 858"/>
+        <local:Item Key="item035B" Value="石ころ"/>
+        <local:Item Key="item035C" Value="ツブテの実"/>
+        <local:Item Key="item035D" Value="ヒカリゴケ"/>
+        <local:Item Key="item035E" Value="はじけクルミ"/>
+        <local:Item Key="item035F" Value="スリンガー松明弾"/>
+        <local:Item Key="item0360" Value="スリンガー爆発弾"/>
+        <local:Item Key="item0361" Value="スリンガー着撃弾"/>
+        <local:Item Key="item0362" Value="スリンガー貫通弾"/>
+        <local:Item Key="item0363" Value="スリンガー滅龍弾"/>
+        <local:Item Key="item0364" Value="ハジケ結晶"/>
+        <local:Item Key="item0365" Value="スリンガー水流弾"/>
+        <local:Item Key="item0366" Value="ヒンヤリダケ"/>
+        <local:Item Key="item0367" Value="オトモダチケット"/>
+        <local:Item Key="item0368" Value="エメラルドな殻"/>
+        <local:Item Key="item0369" Value="奇面族スケッチ"/>
+        <local:Item Key="item036A" Value="強弓珠【２】"/>
+        <local:Item Key="item036B" Value="心眼珠【２】"/>
+        <local:Item Key="item036C" Value="強壁珠【２】"/>
+        <local:Item Key="item036D" Value="剛刃珠【２】"/>
+        <local:Item Key="item036E" Value="無撃珠【２】"/>
+        <local:Item Key="item036F" Value="恐暴竜の黒鱗"/>
+        <local:Item Key="item0370" Value="恐暴竜の黒皮"/>
+        <local:Item Key="item0371" Value="恐暴竜の大牙"/>
+        <local:Item Key="item0372" Value="恐暴竜の鉤爪"/>
+        <local:Item Key="item0373" Value="恐暴竜の頭殻"/>
+        <local:Item Key="item0374" Value="恐暴竜の尻尾"/>
+        <local:Item Key="item0375" Value="恐暴竜の唾液"/>
+        <local:Item Key="item0376" Value="恐暴竜の宝玉"/>
+        <local:Item Key="item0377" Value="爛輝龍の金鱗"/>
+        <local:Item Key="item0378" Value="爛輝龍の金殻"/>
+        <local:Item Key="item0379" Value="爛輝龍の金塊"/>
+        <local:Item Key="item037A" Value="爛輝龍の金巻角"/>
+        <local:Item Key="item037B" Value="爛輝龍の金尾殻"/>
+        <local:Item Key="item037C" Value="爛輝龍の金煌玉"/>
+        <local:Item Key="item037D" Value="黄金石のかけら"/>
+        <local:Item Key="item037E" Value="黄金石の塊"/>
+        <local:Item Key="item037F" Value="炎妃龍の上鱗"/>
+        <local:Item Key="item0380" Value="炎妃龍の翼"/>
+        <local:Item Key="item0381" Value="炎妃龍の宝玉"/>
+        <local:Item Key="item0382" Value="炎妃龍の堅殻"/>
+        <local:Item Key="item0383" Value="炎妃龍のたてがみ"/>
+        <local:Item Key="item0384" Value="炎妃龍の尻尾"/>
+        <local:Item Key="item0385" Value="炎妃龍の尖角"/>
+        <local:Item Key="item0386" Value="魔獣のたてがみ"/>
+        <local:Item Key="item0387" Value="魔獣の堅骨"/>
+        <local:Item Key="item0388" Value="魔獣の大角"/>
+        <local:Item Key="item0389" Value="魔獣の裂爪"/>
+        <local:Item Key="item038A" Value="魔獣の尻尾"/>
+        <local:Item Key="item038B" Value="エーテライトの欠片"/>
+        <local:Item Key="item038C" Value="開花チケット"/>
+        <local:Item Key="item038D" Value="納涼チケット"/>
+        <local:Item Key="item038E" Value="豊穣チケット"/>
+        <local:Item Key="item038F" Value="煌めきチケット"/>
+        <local:Item Key="item0390" Value="感謝チケット"/>
+        <local:Item Key="item0391" Value="昆虫図鑑【春】"/>
+        <local:Item Key="item0392" Value="昆虫図鑑【夏】"/>
+        <local:Item Key="item0393" Value="屍套龍チケット"/>
+        <local:Item Key="item0394" Value="幻獣チケット"/>
+        <local:Item Key="item0395" Value="炎王龍チケット"/>
+        <local:Item Key="item0396" Value="鋼龍チケット"/>
+        <local:Item Key="item0397" Value="滅尽龍チケット"/>
+        <local:Item Key="item0398" Value="熔山龍チケット"/>
+        <local:Item Key="item0399" Value="冥灯龍チケット"/>
+        <local:Item Key="item039A" Value="黒い包帯"/>
+        <local:Item Key="item039B" Value="黒い水晶チケット"/>
+        <local:Item Key="item039C" Value="掻鳥チケット"/>
+        <local:Item Key="item039D" Value="ユラユラチケット"/>
+        <local:Item Key="item039E" Value="Item 926"/>
+        <local:Item Key="item039F" Value="Item 927"/>
+        <local:Item Key="item03A0" Value="ロックマンチケット"/>
+        <local:Item Key="item03A1" Value="Item 929"/>
+        <local:Item Key="item03A2" Value="Item 930"/>
+        <local:Item Key="item03A3" Value="Item 931"/>
+        <local:Item Key="item03A4" Value="蒼星のかけら"/>
+        <local:Item Key="item03A5" Value="蒼星の宝玉"/>
+        <local:Item Key="item03A6" Value="レッドオーブ"/>
+        <local:Item Key="item03A7" Value="名匠の設計図"/>
+        <local:Item Key="item03A8" Value="溶解した武器"/>
+        <local:Item Key="item03A9" Value="結合された武器"/>
+        <local:Item Key="item03AA" Value="昇華された武器"/>
+        <local:Item Key="item03AB" Value="暁ノ武士チケット"/>
+        <local:Item Key="item03AC" Value="打上花火【開花】"/>
+        <local:Item Key="item03AD" Value="打上花火【納涼】"/>
+        <local:Item Key="item03AE" Value="噴出花火【豊穣】"/>
+        <local:Item Key="item03AF" Value="打上花火【煌めき】"/>
+        <local:Item Key="item03B0" Value="打上花火【感謝】"/>
+        <local:Item Key="item03B1" Value="コンジキウロコウモリ"/>
+        <local:Item Key="item03B2" Value="キンパクカブトガニ"/>
+        <local:Item Key="item03B3" Value="ジュンキンカブトガニ"/>
+        <local:Item Key="item03B4" Value="カッパーカラッパ"/>
+        <local:Item Key="item03B5" Value="ゴールドカラッパ"/>
+        <local:Item Key="item03B6" Value="ツチノコ"/>
+        <local:Item Key="item03B7" Value="ミニテンダー"/>
+        <local:Item Key="item03B8" Value="黄金片のかけら"/>
+        <local:Item Key="item03B9" Value="黄金片の塊"/>
+        <local:Item Key="item03BA" Value="ブロッサムチケット"/>
+        <local:Item Key="item03BB" Value="セヌの風切り羽"/>
+        <local:Item Key="item03BC" Value="イグニの印"/>
+        <local:Item Key="item03BD" Value="ハンターのルーン石"/>
+        <local:Item Key="item03BE" Value="ネッカー"/>
+        <local:Item Key="item03BF" Value="ブリゲイドチケット"/>
+        <local:Item Key="item03C0" Value="ギルドクロスチケット"/>
+        <local:Item Key="item03C1" Value="フワフワチケット"/>
+        <local:Item Key="item03C2" Value="ゴワゴワチケット"/>
+        <local:Item Key="item03C3" Value="１期団チケット"/>
+        <local:Item Key="item03C4" Value="５期団チケット"/>
+        <local:Item Key="item03C5" Value="炎妃龍チケット"/>
+        <local:Item Key="item03C6" Value="透明な石"/>
+        <local:Item Key="item03C7" Value="ミニフラワーテンダー"/>
+        <local:Item Key="item03C8" Value="サボテンダー"/>
+        <local:Item Key="item03C9" Value="フェイクチケット"/>
+        <local:Item Key="item03CA" Value="フェイクチケットⅡ"/>
+        <local:Item Key="item03CB" Value="フェイクチケットⅢ"/>
+        <local:Item Key="item03CC" Value="ビートルチケット"/>
+        <local:Item Key="item03CD" Value="Item 973"/>
+        <local:Item Key="item03CE" Value="Item 974"/>
+        <local:Item Key="item03CF" Value="ミラージュプリズム"/>
+        <local:Item Key="item03D0" Value="Item 976"/>
+        <local:Item Key="item03D1" Value="灼熱を帯びた武器"/>
+        <local:Item Key="item03D2" Value="爛輝龍の皇金塊"/>
+        <local:Item Key="item03D3" Value="レーシェンの木爪"/>
+        <local:Item Key="item03D4" Value="レーシェンの樹爪"/>
+        <local:Item Key="item03D5" Value="レーシェン討伐の証"/>
+        <local:Item Key="item03D6" Value="古のレーシェン討伐の証"/>
+        <local:Item Key="item03D7" Value="怪物の呪骨"/>
+        <local:Item Key="item03D8" Value="怪物の古呪骨"/>
+        <local:Item Key="item03D9" Value="レーシェンの呪角"/>
+        <local:Item Key="item03DA" Value="レーシェンの古呪角"/>
+        <local:Item Key="item03DB" Value="レーシェンの樹脂"/>
+        <local:Item Key="item03DC" Value="変異誘発剤"/>
+        <local:Item Key="item03DD" Value="ネッカーカード（攻）"/>
+        <local:Item Key="item03DE" Value="ネッカーカード（守）"/>
+        <local:Item Key="item03DF" Value="Item 991"/>
+        <local:Item Key="item03E0" Value="Item 992"/>
+        <local:Item Key="item03E1" Value="Item 993"/>
+        <local:Item Key="item03E2" Value="Item 994"/>
+        <local:Item Key="item03E3" Value="Item 995"/>
+        <local:Item Key="item03E4" Value="Item 996"/>
+        <local:Item Key="item03E5" Value="Item 997"/>
+        <local:Item Key="item03E6" Value="Item 998"/>
+        <local:Item Key="item03E7" Value="アサシンの装衣"/>
+        <local:Item Key="item03E8" Value="Item 1000"/>
+        <local:Item Key="item03E9" Value="Item 1001"/>
+        <local:Item Key="item03EA" Value="Item 1002"/>
+        <local:Item Key="item03EB" Value="Item 1003"/>
+        <local:Item Key="item03EC" Value="Item 1004"/>
+        <local:Item Key="item03ED" Value="Item 1005"/>
+        <local:Item Key="item03EE" Value="Item 1006"/>
+        <local:Item Key="item03EF" Value="Item 1007"/>
+        <local:Item Key="item03F0" Value="Item 1008"/>
+        <local:Item Key="item03F1" Value="Item 1009"/>
+        <local:Item Key="item03F2" Value="Item 1010"/>
+        <local:Item Key="item03F3" Value="Item 1011"/>
+        <local:Item Key="item03F4" Value="Item 1012"/>
+        <local:Item Key="item03F5" Value="Item 1013"/>
+        <local:Item Key="item03F6" Value="Item 1014"/>
+        <local:Item Key="item03F7" Value="Item 1015"/>
+        <local:Item Key="item03F8" Value="Item 1016"/>
+        <local:Item Key="item03F9" Value="Item 1017"/>
+        <local:Item Key="item03FA" Value="Item 1018"/>
+        <local:Item Key="item03FB" Value="Item 1019"/>
+        <local:Item Key="item03FC" Value="Item 1020"/>
+        <local:Item Key="item03FD" Value="Item 1021"/>
+        <local:Item Key="item03FE" Value="Item 1022"/>
+        <local:Item Key="item03FF" Value="Item 1023"/>
+    </x:Array>
+
+</ResourceDictionary>
