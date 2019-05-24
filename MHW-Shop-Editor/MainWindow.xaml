@@ -42,7 +42,7 @@
             <TextBox Height="23" TextWrapping="Wrap" Name="OutputFilter" Text="{Binding filterOutputText, UpdateSourceTrigger=PropertyChanged}"/>
             <ListBox Height="348" Name="output" SelectionMode="Extended" ItemsSource="{Binding filteredOutput}" MouseDoubleClick="OutputDoubleClick"/>
         </StackPanel>
-        <TextBlock HorizontalAlignment="Left" Margin="536,379,0,0" TextWrapping="Wrap" Text="{Binding Mode=OneWay, Source={StaticResource count}}" VerticalAlignment="Top" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" Margin="536,379,0,0" TextWrapping="Wrap" Text="{DynamicResource count}" VerticalAlignment="Top" Width="66"/>
         <TextBlock Name="itemCount" HorizontalAlignment="Left" Margin="607,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="23"/>
     </Grid>
 </Window>
